@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    
+        
+</head>
+<body>
+    
+    
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h3>FORMULARIO</h3>
+                <hr>
+                <!--buenas practicas en el formulario-->
+                <form action="" method=""  id="formulario" onsubmit="return validar()"             >
+                    <div class="mb-3">
+                        <label for="selec" class="form-label">Selecciona el tipo </label>
+                         <!--primera opcion en el formulario sobre el destino-->
+                        <select class="form-select" name="selec" id="selec">
+                            
+                            <option value="">Cultural</option>
+                            <option value="1">Naturaleza</option>
+                            <option value="2">Sol y playa</option>
+                            <option value="3">Actividad programada</option>
+                        </select>
+                         
+
+                    </div>
+                    
+
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                             <!--primer input del formulario-->
+                            <label for="nombre" class="form-label">NOMBRE DEL LUGAR</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required> 
+                            <p id="demo"  ></p>
+                            
+                            
+                            
+
+                            
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label for="tiempo" class="form-label">TIEMPO DE VIAJE</label>
+                            <input type="text" class="form-control" id="tiempo" name="tiempo" required>  
+                            <p id="time"></p>
+
+                            
+                           
+                            
+
+                        </div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">correo electronico</label>
+                        <input type="text" class="form-control" id="email" name="email" required>
+                        <p id="mail"></p>
+                        
+                            
+
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label" for="telefono">TELEFONO</label>
+                            <input  class="form-control" type="text" id="telefono" name="telefono" required >
+                            <p id="telef"></p>
+                            
+
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="ubicacion">ubicacion</label>
+                            <input  class="form-control" type="text" id="ubicacion" required  >
+                            <p id="ubica"></p>
+                            
+
+                        </div>
+                        
+
+                    </div>
+                    <p id="advertencia"></p>
+                    <button  type="submit" onclick="validar()"  class="btn btn-primary">ENVIAR</button>
+
+
+
+
+
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    
+
+</body>
+</html>
